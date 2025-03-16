@@ -35,4 +35,4 @@ with dag:
     task_id="start_datafusion_pipeline",
     )
 
-    extract_data >> start_datafusion_pipeline
+    run_script_task >> start_pipeline
