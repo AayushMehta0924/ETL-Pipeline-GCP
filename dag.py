@@ -34,3 +34,5 @@ with dag:
     instance_name="datafusion-dev",
     task_id="start_datafusion_pipeline",
     )
+
+    extract_data >> start_datafusion_pipeline
